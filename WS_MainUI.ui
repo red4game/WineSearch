@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WineSearcher</class>
+ <widget class="QMainWindow" name="WineSearcher">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>827</width>
+    <height>862</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>WineSearcher</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableWidget" name="WineCatalogue">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>811</width>
+      <height>651</height>
+     </rect>
+    </property>
+    <column>
+     <property name="text">
+      <string>Nom</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Année</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Photo</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Pays</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Région</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Score</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Prix</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Description</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QLineEdit" name="SearchBarCatalog">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>690</y>
+      <width>511</width>
+      <height>41</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="SearchButtonCatalog">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>690</y>
+      <width>291</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Search</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="AddButtonCatalog">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>740</y>
+      <width>161</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Add to catalogue</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="RemoveButtonCatalog">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>740</y>
+      <width>161</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Remove from catalogue</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="AutoSearchButton">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>740</y>
+      <width>161</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Automatic Seach</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>827</width>
+     <height>27</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
