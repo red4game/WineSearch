@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>827</width>
-    <height>862</height>
+    <width>1354</width>
+    <height>912</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,10 +19,44 @@
      <rect>
       <x>10</x>
       <y>30</y>
-      <width>811</width>
+      <width>1331</width>
       <height>651</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="sortingEnabled">
+     <bool>true</bool>
+    </property>
+    <attribute name="horizontalHeaderCascadingSectionResizes">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="horizontalHeaderMinimumSectionSize">
+     <number>64</number>
+    </attribute>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>192</number>
+    </attribute>
+    <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+     <bool>true</bool>
+    </attribute>
+    <attribute name="verticalHeaderCascadingSectionResizes">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="verticalHeaderStretchLastSection">
+     <bool>false</bool>
+    </attribute>
+    <column>
+     <property name="text">
+      <string>Vignoble</string>
+     </property>
+    </column>
     <column>
      <property name="text">
       <string>Nom</string>
@@ -35,17 +69,7 @@
     </column>
     <column>
      <property name="text">
-      <string>Photo</string>
-     </property>
-    </column>
-    <column>
-     <property name="text">
       <string>Pays</string>
-     </property>
-    </column>
-    <column>
-     <property name="text">
-      <string>Région</string>
      </property>
     </column>
     <column>
@@ -55,33 +79,53 @@
     </column>
     <column>
      <property name="text">
+      <string>Volume</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Photo</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>ID</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
       <string>Prix</string>
      </property>
     </column>
     <column>
      <property name="text">
-      <string>Description</string>
+      <string>URL</string>
      </property>
     </column>
    </widget>
-   <widget class="QLineEdit" name="SearchBarCatalog">
+   <widget class="QLineEdit" name="WineSearchInput">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>690</y>
-      <width>511</width>
+      <x>560</x>
+      <y>740</y>
+      <width>361</width>
       <height>41</height>
      </rect>
     </property>
    </widget>
-   <widget class="QPushButton" name="SearchButtonCatalog">
+   <widget class="QPushButton" name="CatalogSearchButton">
     <property name="geometry">
      <rect>
-      <x>530</x>
+      <x>1160</x>
       <y>690</y>
-      <width>291</width>
-      <height>41</height>
+      <width>181</width>
+      <height>81</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
     </property>
     <property name="text">
      <string>Search</string>
@@ -91,7 +135,7 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>740</y>
+      <y>690</y>
       <width>161</width>
       <height>61</height>
      </rect>
@@ -104,7 +148,7 @@
     <property name="geometry">
      <rect>
       <x>180</x>
-      <y>740</y>
+      <y>690</y>
       <width>161</width>
       <height>61</height>
      </rect>
@@ -116,14 +160,203 @@
    <widget class="QPushButton" name="AutoSearchButton">
     <property name="geometry">
      <rect>
-      <x>350</x>
-      <y>740</y>
-      <width>161</width>
-      <height>61</height>
+      <x>1160</x>
+      <y>780</y>
+      <width>181</width>
+      <height>81</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
     </property>
     <property name="text">
      <string>Automatic Seach</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>740</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Nom du vin :</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="WinerySearchInput">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>690</y>
+      <width>311</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>690</y>
+      <width>211</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Nom du vignoble :</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>690</y>
+      <width>81</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Année : </string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="YearSearchInput">
+    <property name="geometry">
+     <rect>
+      <x>1010</x>
+      <y>690</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="minimum">
+     <number>1900</number>
+    </property>
+    <property name="maximum">
+     <number>2050</number>
+    </property>
+    <property name="value">
+     <number>2015</number>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="SearchYearCheckBox">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>750</y>
+      <width>231</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Recherche par année</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>16</width>
+      <height>16</height>
+     </size>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="autoRepeat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="SearchCountryCheckBox">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>830</y>
+      <width>231</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Recherche par pays</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>16</width>
+      <height>16</height>
+     </size>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="autoRepeat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>780</y>
+      <width>81</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Pays :</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="CountrySearchCombo">
+    <property name="geometry">
+     <rect>
+      <x>990</x>
+      <y>780</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
     </property>
    </widget>
   </widget>
@@ -132,7 +365,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>827</width>
+     <width>1354</width>
      <height>27</height>
     </rect>
    </property>
